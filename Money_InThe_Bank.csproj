@@ -1,0 +1,363 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E08313BD-63AE-4235-B377-9B25E0112215}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YourBank</RootNamespace>
+    <AssemblyName>YourBank</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44390</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccountResponse.aspx" />
+    <Content Include="ALLUsers.aspx" />
+    <Content Include="CloseAccount.aspx" />
+    <Content Include="Images\360_F_577695566_gxkYaAxCOd35MS9cXQUKsk32cniUaoCh.jpg" />
+    <Content Include="Images\businessman-using-mobile-online-banking-payments-digital-marketing-finance-network-shopping-icon-customer-networking-148214410.jpg" />
+    <Content Include="CreateEmployees.aspx" />
+    <Content Include="CustomerHome.aspx" />
+    <Content Include="CustomersDt.aspx" />
+    <Content Include="Details.aspx" />
+    <Content Include="EmployeeHome.aspx" />
+    <Content Include="EmployeesDt.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\0187.jpg_wh1200.jpg" />
+    <Content Include="Images\6847.jpg_wh1200.jpg" />
+    <Content Include="Images\72+-Bright-Wallpaper-on-WallpaperSafari.jpg" />
+    <Content Include="Images\9948.jpg_wh1200.jpg" />
+    <Content Include="Images\bank-finance.jpg" />
+    <Content Include="Images\bank-website-design.jpg" />
+    <Content Include="Images\Bank.png" />
+    <Content Include="Images\banner-digital-graphics-lion.jpg" />
+    <Content Include="Images\banner-online-banking.jpg" />
+    <Content Include="Images\christmas-holiday-decorations-balls-bells-branches-snowflakes-christianon-blue-header-background-hd-1920x720.jpg" />
+    <Content Include="Images\colorful-spring-flowers-and-blue-sky-website-header.jpg-nggid045186-ngg0dyn-1280x720x100-00f0w010c010r110f110r010t010.jpg" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\il_fullxfull.3847681792_ld05.jpg" />
+    <Content Include="Images\image1.jpg" />
+    <Content Include="Images\images %281%29.jpg" />
+    <Content Include="Images\images %282%29.jpg" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\IndusInd-Bank-FEATURE-compressed.jpg" />
+    <Content Include="Images\lovepik-plant-grass-background-image_401901536.jpg" />
+    <Content Include="Images\money-profit-grow-business.png" />
+    <Content Include="Images\Money_In_The_Bank_2012_HQ.png" />
+    <Content Include="Images\online-banking-website-design_1284-67729.jpg" />
+    <Content Include="Images\photo-1529539795054-3c162aab037a.jpg" />
+    <Content Include="Images\pngtree-vector-bank-icon-png-image_708538.jpg" />
+    <Content Include="Images\remove_image_background.jpg" />
+    <Content Include="Images\saving-money-for-education-web-banner-design-open-book-with-light-and-piggy-bank-with-gold-coin-scholarship-student-loan-concept-header-or-footer-banner-free-vector.jpg" />
+    <Content Include="Images\send-money-to-nigeria.jpg" />
+    <Content Include="Images\simple-workspace-with-business-accessories-isolated-on-white-background-with-copyspace-office-desktop-banner-700-234895269.jpg" />
+    <Content Include="Images\The future of AI in banking__1024.jpg" />
+    <Content Include="Images\tumblr_ohimqmOMof1uupvpko8_1280.jpg" />
+    <Content Include="Images\XyqeJp.jpg" />
+    <Content Include="LoginForm.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="ManagerHome.aspx" />
+    <Content Include="Mg_Employees.aspx" />
+    <Content Include="MoneyTransfers.aspx" />
+    <Content Include="OpenAccounts.aspx" />
+    <Content Include="PANValidate.aspx" />
+    <Content Include="RegisterAccount.aspx" />
+    <Content Include="RegistrationForm.aspx" />
+    <Content Include="The future of AI in banking__1024.jpg" />
+    <Content Include="Transactions.aspx" />
+    <Content Include="Transfers.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountResponse.aspx.cs">
+      <DependentUpon>AccountResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountResponse.aspx.designer.cs">
+      <DependentUpon>AccountResponse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ALLUsers.aspx.cs">
+      <DependentUpon>ALLUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ALLUsers.aspx.designer.cs">
+      <DependentUpon>ALLUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseAccount.aspx.cs">
+      <DependentUpon>CloseAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseAccount.aspx.designer.cs">
+      <DependentUpon>CloseAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEmployees.aspx.cs">
+      <DependentUpon>CreateEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateEmployees.aspx.designer.cs">
+      <DependentUpon>CreateEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHome.aspx.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerHome.aspx.designer.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersDasboard.Master.cs">
+      <DependentUpon>CustomersDasboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomersDasboard.Master.designer.cs">
+      <DependentUpon>CustomersDasboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersDt.aspx.cs">
+      <DependentUpon>CustomersDt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomersDt.aspx.designer.cs">
+      <DependentUpon>CustomersDt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDasboard.Master.cs">
+      <DependentUpon>EmployeeDasboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeDasboard.Master.designer.cs">
+      <DependentUpon>EmployeeDasboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeHome.aspx.cs">
+      <DependentUpon>EmployeeHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeHome.aspx.designer.cs">
+      <DependentUpon>EmployeeHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesDt.aspx.cs">
+      <DependentUpon>EmployeesDt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeesDt.aspx.designer.cs">
+      <DependentUpon>EmployeesDt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerDashboard.Master.cs">
+      <DependentUpon>ManagerDashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerDashboard.Master.designer.cs">
+      <DependentUpon>ManagerDashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerHome.aspx.cs">
+      <DependentUpon>ManagerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerHome.aspx.designer.cs">
+      <DependentUpon>ManagerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mg_Employees.aspx.cs">
+      <DependentUpon>Mg_Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mg_Employees.aspx.designer.cs">
+      <DependentUpon>Mg_Employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MoneyTransfers.aspx.cs">
+      <DependentUpon>MoneyTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MoneyTransfers.aspx.designer.cs">
+      <DependentUpon>MoneyTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenAccounts.aspx.cs">
+      <DependentUpon>OpenAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenAccounts.aspx.designer.cs">
+      <DependentUpon>OpenAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PANValidate.aspx.cs">
+      <DependentUpon>PANValidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PANValidate.aspx.designer.cs">
+      <DependentUpon>PANValidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterAccount.aspx.cs">
+      <DependentUpon>RegisterAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterAccount.aspx.designer.cs">
+      <DependentUpon>RegisterAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationForm.aspx.cs">
+      <DependentUpon>RegistrationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.aspx.designer.cs">
+      <DependentUpon>RegistrationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions.aspx.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions.aspx.designer.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers.aspx.cs">
+      <DependentUpon>Transfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers.aspx.designer.cs">
+      <DependentUpon>Transfers.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmployeeDasboard.Master" />
+    <Content Include="CustomersDasboard.Master" />
+    <Content Include="ManagerDashboard.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{ae6d7fb6-addc-4ab6-b487-9c00f82c6e54}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BussinessEntity\BussinessEntity.csproj">
+      <Project>{f822db9d-409e-4dca-96c9-b6326b777ad2}</Project>
+      <Name>BussinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConsoleUI\ConsoleUI.csproj">
+      <Project>{3413cab2-6c7c-4f87-968b-03efef961d77}</Project>
+      <Name>ConsoleUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62352</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44390/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

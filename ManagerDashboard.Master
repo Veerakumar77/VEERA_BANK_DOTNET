@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ManagerDashboard.master.cs" Inherits="YourBank.ManagerDashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            height: 215px;
+        }
+        .styleContent{
+            width:550px;
+        }
+        .auto-style4 {
+            width: 1520px;
+        }
+        .auto-style5 {
+            width: 1520px;
+            height: 213px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            margin-top: 0px;
+            text-decoration:none;
+        }
+        .auto-style6 {
+            width: 4px;
+        }
+        .auto-style11 {
+            position: absolute;
+            top: 238px;
+            left: 12px;
+            z-index: 1;
+            width: 200px;
+            height: 35px;
+            padding-top: 10px;
+            text-decoration:none;
+
+        }
+        .auto-style13 {
+            position: absolute;
+            top: 238px;
+            left: 216px;
+            z-index: 1;
+            width: 200px;
+            height: 35px;
+            padding-top: 10px;
+            text-decoration:none;
+            right: 1434px;
+        }
+        .auto-style14 {
+            position: absolute;
+            top: 238px;
+            left: 420px;
+            z-index: 1;
+            width: 201px;
+            height: 35px;
+            padding-top: 10px;
+            text-decoration:none;
+        }
+        .auto-style16 {
+            position: absolute;
+            top: 238px;
+            left: 625px;
+            z-index: 1;
+            width: 200px;
+            height: 35px;
+            padding-top: 10px;
+            text-decoration:none;
+        }
+        .auto-style18 {
+            width: 176px;
+        }
+        .auto-style22 {
+            position: absolute;
+            top: 238px;
+            left: 828px;
+            z-index: 1;
+            width: 200px;
+            height: 35px;
+            padding-top: 10px;
+            text-decoration:none;
+        }
+        .auto-style23 {
+            position: absolute;
+            top: 238px;
+            left: 1032px;
+            z-index: 1;
+            width: 200px;
+            height: 35px;
+            padding-top: 10px;
+            text-decoration:none;
+        }
+        .auto-style26 {
+            height: 42px;
+        }
+        .auto-style27 {
+            width: 94px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style3" colspan="6">
+                    <img alt="jhgf" class="auto-style5" src="Images/simple-workspace-with-business-accessories-isolated-on-white-background-with-copyspace-office-desktop-banner-700-234895269.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style26" style="text-align: center; " colspan="6" align=center>
+                    <asp:HyperLink ID="HyperLink1" style="text-align:center" runat="server" CssClass="auto-style11" BackColor="#43C2F3" NavigateUrl="~/CustomersDt.aspx" Font-Bold="True" Font-Size="Medium" ForeColor="White">Customers</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style13" BackColor="#43C2F3" Font-Bold="True" Font-Size="Medium" ForeColor="White" NavigateUrl="~/EmployeesDt.aspx">Employees</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" CssClass="auto-style14" BackColor="#43C2F3" Font-Bold="True" Font-Size="Medium" ForeColor="White" NavigateUrl="~/ALLUsers.aspx">All Users</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink7" runat="server" CssClass="auto-style16" BackColor="#43C2F3" Font-Bold="True" Font-Size="Medium" ForeColor="White" NavigateUrl="~/PANValidate.aspx">Open Account</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink5" runat="server" CssClass="auto-style22" BackColor="#43C2F3" NavigateUrl="~/RegisterAccount.aspx" Font-Bold="True" Font-Size="Medium" ForeColor="White">Registration</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink6" runat="server" CssClass="auto-style23" BackColor="#43C2F3" Font-Bold="True" Font-Size="Medium" ForeColor="White" NavigateUrl="~/Logout.aspx">Logout</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style18">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="auto-style27">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="auto-style6">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="6">
+        <div class="auto-style4">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>

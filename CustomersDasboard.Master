@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomersDasboard.master.cs" Inherits="YourBank.CustomersDasboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+           height: 215px;
+        }
+        .auto-style5 {
+            height: 42px;
+        }
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 255px;
+            left:457px;
+            z-index: 1;
+            width: 200px;
+            height: 25px;
+            padding: 10px;
+            text-decoration:none;
+            text-align:center;
+            right: 1140px;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 255px;
+            left: 13px;
+            z-index: 1;
+            width: 200px;
+            height: 25px;
+            padding: 10px;
+            text-decoration:none;
+            text-align:center;
+        }
+        .auto-style9 {
+            width: 1520px;
+            height: 215px;
+        }
+        .auto-style10 {
+            position: absolute;
+            top: 255px;
+            left: 235px;
+            z-index: 1;
+            width: 200px;
+            height: 25px;
+            padding: 10px;
+            text-decoration:none;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    <table class="auto-style6">
+        <tr>
+            <td class="auto-style2">
+                <img alt="bv" class="auto-style9" src="Images/360_F_577695566_gxkYaAxCOd35MS9cXQUKsk32cniUaoCh.jpg" /><br />
+                <br />
+                <asp:HyperLink ID="HyperLink3" Bold="True" ForeColor="White" BackColor="#0057AE" runat="server" CssClass="auto-style8" Font-Bold="True" NavigateUrl="~/Transfers.aspx">Transfers</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style5">
+                <asp:HyperLink ID="HyperLink2" Bold="True" ForeColor="White" BackColor="#0057AE" runat="server" CssClass="auto-style7" Font-Bold="True" NavigateUrl="~/Logout.aspx">Logout</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" runat="server" Bold="True" ForeColor="White" BackColor="#0057AE" CssClass="auto-style10" Font-Bold="True" NavigateUrl="~/MoneyTransfers.aspx">Money Transfer</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+    <p>
+        &nbsp;</p>
+    </body>
+</html>
